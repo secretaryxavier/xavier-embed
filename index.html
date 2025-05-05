@@ -19,7 +19,7 @@
       font-family: 'Inter', sans-serif;
       background-color: var(--bg-color);
       color: var(--text-color);
-      line-height: 1.6;
+      line-height: 1.7;
     }
     header {
       background-color: var(--accent-color);
@@ -30,53 +30,37 @@
     header h1 {
       margin: 0;
       font-family: 'Raleway', sans-serif;
-      font-size: 2.5rem;
+      font-size: 2.75rem;
     }
     nav {
       margin-top: 1rem;
     }
     nav a {
       color: white;
-      margin: 0 1rem;
+      margin: 0 1.2rem;
       text-decoration: none;
       font-weight: 600;
     }
     section {
       padding: 4rem 2rem;
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
     }
     section h2 {
       font-family: 'Raleway', sans-serif;
       color: var(--accent-color);
+      font-size: 2rem;
       margin-bottom: 1rem;
     }
     .portfolio img {
       max-width: 100%;
-      height: auto;
       margin-bottom: 1rem;
     }
     .blog-entry {
-      margin-bottom: 2rem;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 0.5rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .contact-form button {
-      background-color: var(--accent-color);
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      cursor: pointer;
-      border-radius: 4px;
+      margin-bottom: 2.5rem;
     }
     footer {
-      background-color: #eaeaea;
+      background-color: #EDEDED;
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
@@ -99,48 +83,92 @@
 
   <section id="about">
     <h2>About</h2>
-    <p>Welcome to my digital space where art meets neuroscience. I'm Xavier Brown, a multidisciplinary artist and researcher exploring the intersections of creativity, cognition, and technology.</p>
+    <p>
+      I’m Xavier Brown — a painter, digital media artist, and honors psychology student at Portland State University.
+      My work explores the liminal space between internal cognition and external representation — between memory and ritual,
+      between neural resonance and aesthetic artifact.
+    </p>
+    <p>
+      Currently, I’m preparing for a study abroad research experience in Bologna, Italy, supported by the Gilman Scholarship.
+      My goal is to conduct field interviews and visual studies related to symbolic architecture, active inference, and the sensory vocabulary of Italian design.
+    </p>
   </section>
 
   <section id="portfolio" class="portfolio">
     <h2>Portfolio</h2>
-    <img src="path-to-your-image.jpg" alt="Artwork Title">
-    <p>Description of the artwork, medium, and inspiration.</p>
-    <!-- Repeat for additional artworks -->
+    <img src="your-painting.jpg" alt="Painting titled: Threshold Memory">
+    <p>
+      <strong>Threshold Memory</strong> (oil on canvas) explores layered consciousness and the illusion of time during the onset of sensory overwhelm. Created after studying synesthesia in neuropsych literature.
+    </p>
+
+    <img src="your-video-still.jpg" alt="Still from: Inference Loop">
+    <p>
+      <strong>Inference Loop</strong> (video, 3m21s) is a procedural video experiment exploring self-updating mental models, accompanied by a Friston-inspired narration of Bayesian priors.
+    </p>
   </section>
 
   <section id="blog">
-    <h2>Blog</h2>
+    <h2>Blog & Reflections</h2>
+
     <div class="blog-entry">
-      <h3>Exploring Neural Pathways Through Art</h3>
-      <p>A brief summary of the blog post content...</p>
-      <a href="link-to-full-post.html">Read more</a>
+      <h3>On Active Inference and Artistic Process</h3>
+      <p>
+        What if painting wasn't about expressing an emotion — but about reducing epistemic uncertainty?
+        This piece explores how predictive processing theory can reshape how we understand the artist's role
+        as a model-building agent in a dynamic world.
+      </p>
     </div>
-    <!-- Repeat for additional blog entries -->
+
+    <div class="blog-entry">
+      <h3>Symbolic Spaces: Notes from Italy</h3>
+      <p>
+        A short field note from my upcoming work in Bologna: walking through the Basilica of San Petronio
+        and noticing the embodied weight of stained glass as a compression algorithm for collective memory.
+      </p>
+    </div>
   </section>
 
   <section id="research">
-    <h2>Research</h2>
-    <p>Details about ongoing research projects, collaborations, and findings.</p>
+    <h2>Research Projects</h2>
+    <p>
+      I'm currently developing a research portfolio on the intersections of:
+      <ul>
+        <li>Mind-technology interaction</li>
+        <li>Quantum randomness in embodied cognition</li>
+        <li>Visual culture and internal representation</li>
+      </ul>
+    </p>
+    <p>
+      My senior thesis explores the psychological architecture of symbolic systems, referencing Friston’s active inference and Varela’s enactive cognition,
+      with an eye toward artistic practices as ecological feedback loops.
+    </p>
   </section>
 
   <section id="interviews">
     <h2>Interviews</h2>
-    <p>Conversations with Italian scientists and students during my time in Bologna, discussing the fusion of art and science.</p>
+    <p>
+      While abroad in Bologna, I will be interviewing Italian researchers, artists, and students about how
+      tradition, neuroscience, and technology shape the evolving landscape of cognition and cultural identity.
+    </p>
+    <ul>
+      <li>Prof. Alessio Avenanti – Cognitive Neuroscience & Motor Systems</li>
+      <li>Prof. Francesca Tomasi – Digital Humanities</li>
+      <li>Martina (student, Fine Arts Academy of Bologna)</li>
+    </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <form class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <p>
+      I’m open to collaborative projects, interview invitations, and academic dialogue.
+      Please reach out via email or through the embedded form below.
+    </p>
+    <!-- Placeholder contact form -->
+    <p>Email: <a href="mailto:xavier@example.com">xavier@example.com</a></p>
   </section>
 
   <footer>
-    &copy; 2025 Xavier Brown. All rights reserved.
+    &copy; 2025 Xavier Brown. All rights reserved. | Powered by GitHub Pages
   </footer>
 
 </body>
