@@ -3,26 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xavier's Custom Page</title>
+  <title>Xavier Brown Artworks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg-color: #FAFAFA;
+      --text-color: #444444;
+      --accent-color: #9C89FF;
+      --link-color: #5A77FF;
+    }
     body {
-      font-family: 'Raleway', sans-serif;
-      background-color: #FAFAFA;
-      color: #444444;
       margin: 0;
-      padding: 20px;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
     }
-    h1 {
-      color: #9C89FF;
+    header {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 2rem;
+      text-align: center;
     }
-    a {
-      color: #5A77FF;
+    header h1 {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      font-size: 2.5rem;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    section h2 {
+      font-family: 'Raleway', sans-serif;
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+    .portfolio img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    .blog-entry {
+      margin-bottom: 2rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact-form button {
+      background-color: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    footer {
+      background-color: #eaeaea;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Xavier's Custom Page</h1>
-  <p>This page is styled with custom fonts and colors.</p>
-  <p>Explore more at <a href="https://www.xavierbrownartworks.com">Xavier Brown Artworks</a>.</p>
+
+  <header>
+    <h1>Xavier Brown Artworks</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#blog">Blog</a>
+      <a href="#research">Research</a>
+      <a href="#interviews">Interviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Welcome to my digital space where art meets neuroscience. I'm Xavier Brown, a multidisciplinary artist and researcher exploring the intersections of creativity, cognition, and technology.</p>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <img src="path-to-your-image.jpg" alt="Artwork Title">
+    <p>Description of the artwork, medium, and inspiration.</p>
+    <!-- Repeat for additional artworks -->
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <div class="blog-entry">
+      <h3>Exploring Neural Pathways Through Art</h3>
+      <p>A brief summary of the blog post content...</p>
+      <a href="link-to-full-post.html">Read more</a>
+    </div>
+    <!-- Repeat for additional blog entries -->
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <p>Details about ongoing research projects, collaborations, and findings.</p>
+  </section>
+
+  <section id="interviews">
+    <h2>Interviews</h2>
+    <p>Conversations with Italian scientists and students during my time in Bologna, discussing the fusion of art and science.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Xavier Brown. All rights reserved.
+  </footer>
+
 </body>
 </html>
