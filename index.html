@@ -4,68 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xavier Brown Artworks</title>
+
+  <!-- Preconnect for Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #FAFAFA;
-      --text-color: #444444;
-      --accent-color: #9C89FF;
-      --link-color: #5A77FF;
-    }
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.7;
-    }
-    header {
-      background-color: var(--accent-color);
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-family: 'Raleway', sans-serif;
-      font-size: 2.75rem;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      color: white;
-      margin: 0 1.2rem;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    section h2 {
-      font-family: 'Raleway', sans-serif;
-      color: var(--accent-color);
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .portfolio img {
-      max-width: 100%;
-      margin-bottom: 1rem;
-    }
-    .blog-entry {
-      margin-bottom: 2.5rem;
-    }
-    footer {
-      background-color: #EDEDED;
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-    }
-  </style>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -96,12 +42,12 @@
 
   <section id="portfolio" class="portfolio">
     <h2>Portfolio</h2>
-    <img src="your-painting.jpg" alt="Painting titled: Threshold Memory">
+    <img src="assets/portfolio/your-painting.jpg" alt="Painting titled: Threshold Memory">
     <p>
       <strong>Threshold Memory</strong> (oil on canvas) explores layered consciousness and the illusion of time during the onset of sensory overwhelm. Created after studying synesthesia in neuropsych literature.
     </p>
 
-    <img src="your-video-still.jpg" alt="Still from: Inference Loop">
+    <img src="assets/portfolio/your-video-still.jpg" alt="Still from: Inference Loop">
     <p>
       <strong>Inference Loop</strong> (video, 3m21s) is a procedural video experiment exploring self-updating mental models, accompanied by a Friston-inspired narration of Bayesian priors.
     </p>
@@ -168,8 +114,10 @@
   </section>
 
   <footer>
-    &copy; 2025 Xavier Brown. All rights reserved. | Powered by GitHub Pages
+    © 2025 Xavier Brown. All rights reserved. | Powered by GitHub Pages
   </footer>
 
+  <!-- External JS -->
+  <script src="scripts.js" defer></script>
 </body>
 </html>
