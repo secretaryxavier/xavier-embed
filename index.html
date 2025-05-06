@@ -14,107 +14,66 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
   <header>
     <h1>Xavier Brown Artworks</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#blog">Blog</a>
-      <a href="#research">Research</a>
-      <a href="#interviews">Interviews</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>
-      I’m Xavier Brown — a painter, digital media artist, and honors psychology student at Portland State University.
-      My work explores the liminal space between internal cognition and external representation — between memory and ritual,
-      between neural resonance and aesthetic artifact.
-    </p>
-    <p>
-      Currently, I’m preparing for a study abroad research experience in Bologna, Italy, supported by the Gilman Scholarship.
-      My goal is to conduct field interviews and visual studies related to symbolic architecture, active inference, and the sensory vocabulary of Italian design.
-    </p>
-  </section>
+  <!-- Landing Blocks -->
+  <main>
+    <!-- Placeholder for future 3D interactive canvas -->
+    <div id="interactive-canvas"></div>
 
-  <section id="portfolio" class="portfolio">
-    <h2>Portfolio</h2>
-    <img src="assets/portfolio/your-painting.jpg" alt="Painting titled: Threshold Memory">
-    <p>
-      <strong>Threshold Memory</strong> (oil on canvas) explores layered consciousness and the illusion of time during the onset of sensory overwhelm. Created after studying synesthesia in neuropsych literature.
-    </p>
+    <section id="landing-blocks">
+      <div class="grid cols-3" style="max-width:1200px; margin: var(--space-lg) auto; gap: var(--space-lg);">
 
-    <img src="assets/portfolio/your-video-still.jpg" alt="Still from: Inference Loop">
-    <p>
-      <strong>Inference Loop</strong> (video, 3m21s) is a procedural video experiment exploring self-updating mental models, accompanied by a Friston-inspired narration of Bayesian priors.
-    </p>
-  </section>
+        <a href="about.html" class="block">
+          <div class="block-content">
+            <h2>About</h2>
+            <p>Explore my background: art, psychology & neuroscience.</p>
+          </div>
+        </a>
 
-  <section id="blog">
-    <h2>Blog & Reflections</h2>
+        <a href="portfolio.html" class="block">
+          <div class="block-content">
+            <h2>Portfolio</h2>
+            <p>View paintings, digital works & video experiments.</p>
+          </div>
+        </a>
 
-    <div class="blog-entry">
-      <h3>On Active Inference and Artistic Process</h3>
-      <p>
-        What if painting wasn't about expressing an emotion — but about reducing epistemic uncertainty?
-        This piece explores how predictive processing theory can reshape how we understand the artist's role
-        as a model-building agent in a dynamic world.
-      </p>
-    </div>
+        <a href="blog.html" class="block">
+          <div class="block-content">
+            <h2>Blog</h2>
+            <p>Read reflections on active inference & neuroaesthetics.</p>
+          </div>
+        </a>
 
-    <div class="blog-entry">
-      <h3>Symbolic Spaces: Notes from Italy</h3>
-      <p>
-        A short field note from my upcoming work in Bologna: walking through the Basilica of San Petronio
-        and noticing the embodied weight of stained glass as a compression algorithm for collective memory.
-      </p>
-    </div>
-  </section>
+        <a href="research.html" class="block">
+          <div class="block-content">
+            <h2>Research</h2>
+            <p>Access papers, presentations & project outlines.</p>
+          </div>
+        </a>
 
-  <section id="research">
-    <h2>Research Projects</h2>
-    <p>
-      I'm currently developing a research portfolio on the intersections of:
-      <ul>
-        <li>Mind-technology interaction</li>
-        <li>Quantum randomness in embodied cognition</li>
-        <li>Visual culture and internal representation</li>
-      </ul>
-    </p>
-    <p>
-      My senior thesis explores the psychological architecture of symbolic systems, referencing Friston’s active inference and Varela’s enactive cognition,
-      with an eye toward artistic practices as ecological feedback loops.
-    </p>
-  </section>
+        <a href="interviews.html" class="block">
+          <div class="block-content">
+            <h2>Interviews</h2>
+            <p>Browse field interviews from my Bologna trip.</p>
+          </div>
+        </a>
 
-  <section id="interviews">
-    <h2>Interviews</h2>
-    <p>
-      While abroad in Bologna, I will be interviewing Italian researchers, artists, and students about how
-      tradition, neuroscience, and technology shape the evolving landscape of cognition and cultural identity.
-    </p>
-    <ul>
-      <li>Prof. Alessio Avenanti – Cognitive Neuroscience & Motor Systems</li>
-      <li>Prof. Francesca Tomasi – Digital Humanities</li>
-      <li>Martina (student, Fine Arts Academy of Bologna)</li>
-    </ul>
-  </section>
+        <a href="contact.html" class="block">
+          <div class="block-content">
+            <h2>Contact</h2>
+            <p>Get in touch for collaborations & inquiries.</p>
+          </div>
+        </a>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      I’m open to collaborative projects, interview invitations, and academic dialogue.
-      Please reach out via email or through the embedded form below.
-    </p>
-    <!-- Placeholder contact form -->
-    <p>Email: <a href="mailto:xavier@example.com">xavier@example.com</a></p>
-  </section>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    © 2025 Xavier Brown. All rights reserved. | Powered by GitHub Pages
+    © 2025 Xavier Brown. All rights reserved.
   </footer>
 
   <!-- External JS -->
