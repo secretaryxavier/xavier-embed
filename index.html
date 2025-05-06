@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Xavier Brown Artworks</title>
-
   <!-- Preconnect for Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
   <!-- External CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -18,62 +16,117 @@
     <h1>Xavier Brown Artworks</h1>
   </header>
 
-  <!-- Landing Blocks -->
   <main>
-    <!-- Placeholder for future 3D interactive canvas -->
-    <div id="interactive-canvas"></div>
+    <!-- Hero Banner -->
+    <section id="hero" class="hero-grid">
+      <div class="hero-image">
+        <img src="assets/banner.jpg" alt="Hero banner: neural architecture">
+      </div>
+      <div class="hero-text">
+        <h1>XAVIER BROWN</h1>
+        <p>Art, Cognition. Memory. Archives of the Future.</p>
+        <div class="hero-buttons">
+          <a href="portfolio.html" class="btn-primary">Portfolio</a>
+          <a href="research.html" class="btn-primary">Research Projects</a>
+          <a href="contact.html" class="btn-primary">Contact</a>
+        </div>
+      </div>
+    </section>
 
-    <section id="landing-blocks">
-      <div class="grid cols-3" style="max-width:1200px; margin: var(--space-lg) auto; gap: var(--space-lg);">
+    <!-- About Block -->
+    <section id="about" class="grid cols-3 about-grid">
+      <div class="about-image">
+        <img src="assets/portrait.jpg" alt="Portrait of Xavier Brown">
+      </div>
+      <div class="about-text">
+        <p>I’m Xavier Brown — a painter, digital media artist, and honors psychology student at Portland State University. My work explores the liminal space between internal cognition and external representation — between memory and ritual, between neural resonance and aesthetic artifact.</p>
+      </div>
+      <div class="about-links">
+        <ul>
+          <li><a href="about.html#academic-bio">Academic Bio</a></li>
+          <li><a href="about.html#art-statement">Artistic Statement</a></li>
+          <li><a href="docs/XavierBrown_CV.pdf" download>Download CV</a></li>
+        </ul>
+      </div>
+    </section>
 
-        <a href="about.html" class="block">
-          <div class="block-content">
-            <h2>About</h2>
-            <p>Explore my background: art, psychology & neuroscience.</p>
-          </div>
-        </a>
+    <!-- Work Showcases -->
+    <section id="showcase" class="grid cols-3 showcase-grid">
+      <div>
+        <h2>Portfolio</h2>
+        <div class="grid cols-3">
+          <img src="assets/portfolio/threshold-memory.jpg" alt="Threshold Memory">
+          <!-- more thumbnails -->
+        </div>
+      </div>
+      <div>
+        <h2>Video</h2>
+        <div class="grid cols-3">
+          <video src="assets/videos/inference-loop.mp4" controls poster="assets/videos/inference-loop-still.jpg"></video>
+          <!-- more videos -->
+        </div>
+      </div>
+      <div>
+        <h2>Digital Projects</h2>
+        <div class="grid cols-3">
+          <img src="assets/digital/project1.jpg" alt="Digital Project 1">
+          <!-- more digital works -->
+        </div>
+      </div>
+    </section>
 
-        <a href="portfolio.html" class="block">
-          <div class="block-content">
-            <h2>Portfolio</h2>
-            <p>View paintings, digital works & video experiments.</p>
-          </div>
-        </a>
+    <!-- Blog & Upcoming Interviews -->
+    <section id="updates" class="grid cols-2 updates-grid">
+      <div>
+        <h2>Blog & Reflections</h2>
+        <nav class="button-list">
+          <a href="blog.html#summaries">Article Summaries</a>
+          <a href="blog.html#process">Research Process Notes</a>
+          <a href="blog.html#creative">Creative Thoughts</a>
+        </nav>
+      </div>
+      <div>
+        <h2>Upcoming Interviews</h2>
+        <div class="calendar-faux">Calendar Timeline</div>
+        <h3>Completed Interviews</h3>
+        <ul>
+          <li><a href="interviews/alessio-avenanti.html">Prof. Alessio Avenanti</a></li>
+          <!-- more interviews -->
+        </ul>
+      </div>
+    </section>
 
-        <a href="blog.html" class="block">
-          <div class="block-content">
-            <h2>Blog</h2>
-            <p>Read reflections on active inference & neuroaesthetics.</p>
-          </div>
-        </a>
+    <!-- Research Projects Teaser -->
+    <section id="research-teaser" class="grid cols-2 research-grid">
+      <div>
+        <p>Developing research on the intersections of mind–technology interaction, quantum randomness in embodied cognition, and visual culture as feedback loops.</p>
+      </div>
+      <div>
+        <ol>
+          <li>Gilman Scholar Project</li>
+          <li>Thesis Concepts</li>
+          <li>Upcoming Collaborations</li>
+        </ol>
+      </div>
+    </section>
 
-        <a href="research.html" class="block">
-          <div class="block-content">
-            <h2>Research</h2>
-            <p>Access papers, presentations & project outlines.</p>
-          </div>
-        </a>
-
-        <a href="interviews.html" class="block">
-          <div class="block-content">
-            <h2>Interviews</h2>
-            <p>Browse field interviews from my Bologna trip.</p>
-          </div>
-        </a>
-
-        <a href="contact.html" class="block">
-          <div class="block-content">
-            <h2>Contact</h2>
-            <p>Get in touch for collaborations & inquiries.</p>
-          </div>
-        </a>
-
+    <!-- Contact -->
+    <section id="contact" class="grid cols-2 contact-grid">
+      <div>
+        <!-- Placeholder for form or iframe -->
+        <p>Email: <a href="mailto:xavier@example.com">xavier@example.com</a></p>
+      </div>
+      <div>
+        <ul>
+          <li>Twitter: <a href="https://twitter.com/xavierbrown">twitter.com/xavierbrown</a></li>
+          <li>Media Kit: <a href="docs/Press_Kit.zip">Download</a></li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer>
-    © 2025 Xavier Brown. All rights reserved.
+    &copy; 2025 Xavier Brown. All rights reserved.
   </footer>
 
   <!-- External JS -->
